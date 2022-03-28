@@ -34,7 +34,7 @@ export default function Home() {
           >
             <h3>Examples &rarr;</h3>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
-            <p>Старт в ветке разработки</p>
+            <p>Старт в ветке разработки. Паша молодец!</p>
           </a>
 
           <a
