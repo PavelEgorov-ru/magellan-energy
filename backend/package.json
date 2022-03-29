@@ -1,5 +1,5 @@
 {
-  "name": "magellan-backend",
+  "name": "backend",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -20,7 +20,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "0534d02a-210b-48ee-b0cd-131871d7cf7b"
+    "uuid": "6c9dd577-9393-4b4d-9a1a-ad6b90d8dfa0"
   },
   "engines": {
     "node": ">=12.x.x <=16.x.x",
