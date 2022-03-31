@@ -1,0 +1,23 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+  background-color: var(--white);
+
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #4d4d4d;
+  --white: #f8f8f8;
+}
