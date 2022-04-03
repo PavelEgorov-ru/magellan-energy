@@ -1,7 +1,7 @@
 version: '3'
 services:
   app:
-    image: magellan-energy
+    image: magellan
     container_name: magellan-energy
     restart: always
     ports:
