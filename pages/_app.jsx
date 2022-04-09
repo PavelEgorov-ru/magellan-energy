@@ -1,6 +1,7 @@
 import '../styles/global.css';
 import React from 'react';
 import Head from 'next/head';
+import { Htag } from '../components';
 
 const App = ({ Component, pageProps }) => {
   return (
@@ -16,6 +17,14 @@ const App = ({ Component, pageProps }) => {
       </Head>
 
       <div>Привет мир!!!</div>
+      <Htag tag="h1">Самый главный заголовок, который будет на странице</Htag>
+      <Htag tag="h2" colorWith={true}>
+        Самый главный заголовок, который будет на странице
+      </Htag>
+      <Htag tag="h3">Самый главный заголовок, который будет на странице</Htag>
+      <Htag tag="h4">Самый главный заголовок, который будет на странице</Htag>
+      <Htag tag="h5">Самый главный заголовок, который будет на странице</Htag>
+      <Htag tag="h6">Самый главный заголовок, который будет на странице</Htag>
     </>
   );
 };
