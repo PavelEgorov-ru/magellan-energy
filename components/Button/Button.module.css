@@ -1,44 +1,36 @@
-.h1 {
-  margin: 0;
-  font-size: 53px;
-  font-weight: 900;
-  line-height: 45px;
-}
-
-.h2 {
-  margin: 0;
-  font-size: 23px;
-  font-weight: 800;
-  line-height: 23px;
-}
-.h3 {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
-}
-
-.h4 {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 16px;
-}
-
-.h5 {
-  margin: 0;
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
   font-size: 14px;
-  font-weight: 700;
-  line-height: 14px;
-}
-
-.h6 {
-  margin: 0;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 12px;
-}
-
-.h_white {
+  font-weight: 400;
   color: var(--white);
+  transition: all 0.6s;
+}
+
+.button_simple {
+  background-color: rgb(197, 110, 110);
+}
+
+.button_simple:hover {
+  background-color: rgb(184, 57, 57);
+}
+
+.button_form {
+  background-color: aqua;
+}
+
+.button_form:hover {
+  background-color: rgb(4, 136, 136);
+}
+.button_cards {
+  background-color: blueviolet;
+}
+
+.button_cards:hover {
+  background-color: rgb(97, 32, 158);
 }
