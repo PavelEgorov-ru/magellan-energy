@@ -1,6 +1,7 @@
 import { ButtonProps } from './Button.props';
 import cn from 'classnames';
 import styles from './Button.module.css';
+import PhoneIcon from './phone.svg';
 
 export const Button = ({ view, children, className, ...props }: ButtonProps): JSX.Element => {
   return (
@@ -13,6 +14,9 @@ export const Button = ({ view, children, className, ...props }: ButtonProps): JS
       {...props}
     >
       {children}
+      <span>
+        <PhoneIcon />
+      </span>
     </button>
   );
 };

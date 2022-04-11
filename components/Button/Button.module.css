@@ -20,6 +20,10 @@
   background-color: rgb(184, 57, 57);
 }
 
+.button_simple svg {
+  fill: pink;
+}
+
 .button_form {
   background-color: aqua;
 }
