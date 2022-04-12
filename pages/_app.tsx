@@ -1,7 +1,7 @@
 import '../styles/global.css';
 import React from 'react';
 import Head from 'next/head';
-import { Htag, Button } from '../components';
+import { Htag, Button, Header } from '../components';
 import PhoneIcon from '../public/telephone-fill.svg';
 
 const App = ({}) => {
@@ -22,7 +22,7 @@ const App = ({}) => {
         />
       </Head>
 
-      <div>Привет мир!!!</div>
+      {/* <div>Привет мир!!!</div>
       <Htag tag="h1">Самый главный заголовок, который будет на странице</Htag>
       <Htag tag="h2" colorWith={true}>
         Самый главный заголовок, который будет на странице
@@ -30,12 +30,13 @@ const App = ({}) => {
       <Htag tag="h3">Самый главный заголовок, который будет на странице</Htag>
       <Htag tag="h4">Самый главный заголовок, который будет на странице</Htag>
       <Htag tag="h5">Самый главный заголовок, который будет на странице</Htag>
-      <Htag tag="h6">Самый главный заголовок, который будет на странице</Htag>
-      <Button view="cards" onClick={Click}>
+      <Htag tag="h6">Самый главный заголовок, который будет на странице</Htag> */}
+      {/* <Button view="cards" onClick={Click}>
         Первая кнопка c длинным текстом
       </Button>
       <Button view="form">Вторая </Button>
-      <Button view="simple">Третья кнопка</Button>
+      <Button view="simple">Третья кнопка</Button> */}
+      <Header> шапка сайта </Header>
     </>
   );
 };

@@ -15,9 +15,9 @@ export const Button = ({ view, children, className, ...props }: ButtonProps): JS
       {...props}
     >
       {children}
-      <span>
+      {/* <span>
         <PhoneIcon></PhoneIcon>
-      </span>
+      </span> */}
     </button>
   );
 };
