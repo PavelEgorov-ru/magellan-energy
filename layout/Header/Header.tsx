@@ -1,6 +1,6 @@
 import styles from './Header.module.css';
 import { IHeader } from './Header.props';
-import { Htag } from '../index';
+import { Htag } from '../../components/index';
 import cn from 'classnames';
 
 export const Header = ({ children }: IHeader): JSX.Element => {

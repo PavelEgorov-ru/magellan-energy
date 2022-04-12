@@ -1,9 +1,5 @@
-import { Htag } from "../components";
-
-
+import { withLayout } from '../layout/Layout';
 
 export default function Home() {
-  return <div>
-    
-  </div>;
+  return <></>;
 }
