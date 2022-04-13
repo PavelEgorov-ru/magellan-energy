@@ -1,0 +1,50 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--black);
+  transition: all 0.6s;
+}
+
+.button_simple {
+  border: 1px solid var(--black);
+  background-color: var(--white);
+}
+
+.button_simple:hover {
+  background-color: rgb(78, 93, 225);
+  color: var(--white);
+  border: none;
+}
+
+.button_simple svg {
+  fill: pink;
+}
+
+.button_form {
+  border: 1px solid var(--black);
+  background-color: var(--white);
+}
+
+.button_form:hover {
+  background-color: rgb(78, 93, 225);
+  color: var(--white);
+  border: none;
+}
+
+.button_cards {
+  border: 1px solid var(--black);
+  background-color: var(--white);
+}
+
+.button_cards:hover {
+  background-color: rgb(78, 93, 225);
+  color: var(--white);
+  border: none;
+}
