@@ -2,26 +2,38 @@ import { IHtagProps } from './Htag.props';
 import cn from 'classnames';
 import styles from './Htag.module.css';
 
-export const Htag = ({ tag, children, colorWith }: IHtagProps): JSX.Element => {
+export const Htag = ({
+  tag,
+  children,
+  colorWith,
+  className,
+  ...props
+}: IHtagProps): JSX.Element => {
   switch (tag) {
     case 'h1':
       return (
         <h1
-          className={cn(styles.h1, {
+          className={cn(styles.h1, className, {
             [styles.h_white]: colorWith == true,
           })}
+          {...props}
         >
           {children}
         </h1>
       );
     case 'h2':
-      return <h2 className={cn(styles.h2, { [styles.h_white]: colorWith == true })}>{children}</h2>;
+      return (
+        <h2 className={cn(styles.h2, { [styles.h_white]: colorWith == true })} {...props}>
+          {children}
+        </h2>
+      );
     case 'h3':
       return (
         <h3
           className={cn(styles.h3, {
             [styles.h_white]: colorWith == true,
           })}
+          {...props}
         >
           {children}
         </h3>
@@ -32,6 +44,7 @@ export const Htag = ({ tag, children, colorWith }: IHtagProps): JSX.Element => {
           className={cn(styles.h4, {
             [styles.h_white]: colorWith == true,
           })}
+          {...props}
         >
           {children}
         </h4>
@@ -42,6 +55,7 @@ export const Htag = ({ tag, children, colorWith }: IHtagProps): JSX.Element => {
           className={cn(styles.h5, {
             [styles.h_white]: colorWith == true,
           })}
+          {...props}
         >
           {children}
         </h5>
@@ -52,6 +66,7 @@ export const Htag = ({ tag, children, colorWith }: IHtagProps): JSX.Element => {
           className={cn(styles.h6, {
             [styles.h_white]: colorWith == true,
           })}
+          {...props}
         >
           {children}
         </h6>
