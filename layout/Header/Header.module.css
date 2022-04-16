@@ -1,0 +1,111 @@
+.header {
+  margin: 0;
+  border: 1px solid red;
+  width: 100%;
+}
+
+.info {
+  margin: auto;
+  border: 1px solid red;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 400px;
+  height: 130px;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.contacts {
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.contacts_mail {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.contacts_tel {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.link_mail:hover {
+  color: #255dbe;
+  transition: all 0.3s;
+}
+
+.link_tel:hover {
+  color: #255dbe;
+  transition: all 0.3s;
+}
+
+.container {
+  width: 100%;
+  border: 1px solid red;
+  background-image: linear-gradient(to right, #255dbe 0%, #0c0b15 100%);
+}
+
+.nav {
+  margin: auto;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 20px; */
+  max-width: 1200px;
+}
+
+.nav_p {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.nav_p_active {
+  color: red;
+  transition: all 0.2s;
+}
+
+.background {
+  position: relative;
+  background-image: url('../../imges/head-slider-bg.png');
+  background-size: cover;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 600px;
+  padding: 100px 200px;
+  z-index: 1;
+}
+
+.background:before {
+  content: '';
+  background: #2a2c2f;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.4s;
+}
+
+.h1 {
+  max-width: 600px;
+  border: 1px solid red;
+}
