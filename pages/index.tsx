@@ -1,5 +1,7 @@
 import { withLayout } from '../layout/Layout';
 
-export default function Home() {
-  return <></>;
+function Home() {
+  return <div>Страница по умолчанию</div>;
 }
+
+export default withLayout(Home);
