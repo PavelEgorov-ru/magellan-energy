@@ -2,8 +2,12 @@ import styles from './Footer.module.css';
 import { IFooter } from './Footer.props';
 import cn from 'classnames';
 import { Button } from '../../components';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export const Footer = ({ children }: IFooter): JSX.Element => {
+  const router = useRouter();
+
   return (
     <footer className={cn(styles.footer)}>
       <div className={cn(styles.container)}>
@@ -14,11 +18,11 @@ export const Footer = ({ children }: IFooter): JSX.Element => {
             className={cn(styles.logo)}
           />
           <div className={cn(styles.list)}>
-            <p className={cn(styles.list__name)}>
-              <a href="#" className={cn(styles.link)}>
-                Производство
+            <Link href="/production">
+              <a className={cn(styles.link__name)}>
+                <p className={cn(styles.link)}>ПРОИЗВОДСТВО</p>
               </a>
-            </p>
+            </Link>
             <ul className={cn(styles.ul)}>
               <p className={cn(styles.p)}>КТП</p>
               <p className={cn(styles.p)}>БКТП</p>
@@ -27,29 +31,28 @@ export const Footer = ({ children }: IFooter): JSX.Element => {
             </ul>
           </div>
           <div>
-            <p className={cn(styles.list__name)}>
-              <a href="#" className={cn(styles.link)}>
-                Производство
+            <Link href="/decision">
+              <a className={cn(styles.link__name)}>
+                <p className={cn(styles.link)}>РЕШЕНИЯ</p>
               </a>
-            </p>
+            </Link>
             <ul className={cn(styles.ul)}>
-              <p className={cn(styles.p)}>КТП</p>
-              <p className={cn(styles.p)}>БКТП</p>
-              <p className={cn(styles.p)}>РП</p>
-              <p className={cn(styles.p)}>ТП</p>
+              <p className={cn(styles.p)}>КРУ 6-35 кВ</p>
+              <p className={cn(styles.p)}>НКУ 0,4 кВ</p>
+              <p className={cn(styles.p)}>Трансформаторы</p>
+              <p className={cn(styles.p)}>Токопроводы</p>
             </ul>
           </div>
           <div>
-            <p className={cn(styles.list__name)}>
-              <a href="#" className={cn(styles.link)}>
-                Производство
+            <Link href="/services">
+              <a className={cn(styles.link__name)}>
+                <p className={cn(styles.link)}>УСЛУГИ</p>
               </a>
-            </p>
+            </Link>
             <ul className={cn(styles.ul)}>
-              <p className={cn(styles.p)}>КТП</p>
-              <p className={cn(styles.p)}>БКТП</p>
-              <p className={cn(styles.p)}>РП</p>
-              <p className={cn(styles.p)}>ТП</p>
+              <p className={cn(styles.p)}>Проектирование</p>
+              <p className={cn(styles.p)}>Монтаж</p>
+              <p className={cn(styles.p)}>Пуско-наладка</p>
             </ul>
           </div>
         </div>

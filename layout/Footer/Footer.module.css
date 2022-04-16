@@ -2,7 +2,7 @@
   width: 100%;
   padding: 50px 100px;
   /* min-height: 400px; */
-  background-image: linear-gradient(to right, #2a4779 0%, #46454d 100%);
+  background-image: linear-gradient(to right, #255dbe 0%, #0c0b15 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,8 +37,8 @@
 }
 
 .button {
-  width: 200px;
-  height: 40px;
+  width: 160px;
+  height: 45px;
 }
 
 .container_left {
@@ -51,13 +51,28 @@
   height: 100px;
 }
 
-.list__name:hover {
-  color: deeppink;
+.link__name {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.link__name:hover {
+  text-decoration: underline;
   transition: all 0.3s;
 }
 
 .ul {
   padding: 0;
+}
+
+.p {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  color: antiquewhite;
 }
 
 .link_mail:hover {
