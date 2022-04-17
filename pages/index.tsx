@@ -1,16 +1,18 @@
-import cn from 'classnames';
-import { Htag, Section } from '../components';
 import { withLayout } from '../layout/Layout';
-import styles from './Home.module.css';
+
+//код для проверки работы
+import Router from 'next/router';
+import { useEffect } from 'react';
 
 function Home() {
-  return (
-    <Section className={cn(styles.about)} style={{ border: '1px solid red' }}>
-      <Htag tag="h2" className={cn(styles.about__h2)}>
-        о нас
-      </Htag>
-    </Section>
-  );
+  useEffect(() => {
+    const { pathname } = Router;
+    if (pathname == '/') {
+      Router.push('/hello');
+    }
+  }, []);
+
+  return <></>;
 }
 
 export default withLayout(Home);
