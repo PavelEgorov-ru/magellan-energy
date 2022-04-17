@@ -93,7 +93,7 @@ const Hello = (): JSX.Element => {
           </article>
         </div>
       </Section>
-      <Section>
+      <Section className={cn(styles.section)}>
         <Htag tag="h2" className={cn(styles.about__h2)}>
           документация
         </Htag>
@@ -109,6 +109,12 @@ const Hello = (): JSX.Element => {
             <Image src={imageDoc} layout="responsive"></Image>
           </div>
         </div>
+      </Section>
+      <Section className={cn(styles.section)}>
+        <Htag tag="h2" className={cn(styles.about__h2)}>
+          наши партнеры
+        </Htag>
+        <div className={cn(styles.line)}></div>
       </Section>
     </>
   );
