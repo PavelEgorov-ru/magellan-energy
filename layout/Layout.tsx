@@ -9,7 +9,7 @@ const Layout = ({ children }: ILayoutProps): JSX.Element => {
   return (
     <div className={cn(styles.page)}>
       <Header></Header>
-      <main>{children}</main>
+      <main className={styles.main}>{children}</main>
       <Footer></Footer>
     </div>
   );

@@ -81,11 +81,11 @@ export const Header = ({ children }: IHeader): JSX.Element => {
               </p>
             </a>
           </Link>
-          <Link href="/contacts">
+          <Link href="/hello">
             <a>
               <p
                 className={cn(styles.nav_p, {
-                  [styles.nav_p_active]: router.pathname == '/contacts',
+                  [styles.nav_p_active]: router.pathname == '/hello',
                 })}
               >
                 КОНТАКТЫ

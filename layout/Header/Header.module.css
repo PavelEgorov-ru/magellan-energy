@@ -80,7 +80,7 @@
 
 .background {
   position: relative;
-  background-image: url('../../imges/head-slider-bg.png');
+  background-image: url('../../images/head-slider-bg.png');
   background-size: cover;
   box-sizing: border-box;
   display: flex;
