@@ -9,7 +9,6 @@ export const Htag = ({
   className,
   ...props
 }: IHtagProps): JSX.Element => {
-  console.log([className]);
   switch (tag) {
     case 'h1':
       return (
@@ -34,7 +33,7 @@ export const Htag = ({
     case 'h3':
       return (
         <h3
-          className={cn(styles.h3, className, {
+          className={cn(styles.h3, [className], {
             [styles.h_white]: colorWith == true,
           })}
           {...props}
